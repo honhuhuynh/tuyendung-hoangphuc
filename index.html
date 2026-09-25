@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đơn Ứng Tuyển 2026 - Công Ty TNHH MTV Hoàng Phúc</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#520B16',
+              800: '#6D0F1F',
+              700: '#831427',
+              600: '#A31932',
+              100: '#FCE8EC',
+              50: '#FDF2F4',
+            },
+            accent: {
+              gold: '#D4AF37',
+              goldLight: '#F5E7B2',
+              goldDark: '#A6841E',
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom architectural grid background */
+    .blueprint-bg {
+      background-color: #6D0F1F;
+      background-image:
+        radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0),
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 0);
+      background-size: 24px 24px, 32px 32px, 32px 32px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #e2e8f0;
+      border-radius: 4px;
+    }
+
+    .step-active {
+      background-color: #D4AF37 !important;
+      color: #6D0F1F !important;
+      font-weight: 700 !important;
+    }
+
+    .step-completed {
+      background-color: #10B981 !important;
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-800 min-h-screen flex flex-col antialiased">
+
+  <!-- TOP BRAND HERO BANNER -->
+  <header
+    class="blueprint-bg text-white py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden shadow-xl border-b-4 border-accent-gold">
+    <!-- Subtle architectural wireframe decoration -->
+    <div class="absolute -right-10 -bottom-10 opacity-15 pointer-events-none hidden md:block">
+      <i class="fa-solid fa-cubes-stacked text-[260px] text-accent-gold"></i>
+    </div>
+
+    <div class="max-w-4xl mx-auto relative z-10 text-center">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/25 border border-accent-gold/40 text-accent-gold text-xs sm:text-sm font-semibold mb-3 tracking-wide uppercase">
+        <i class="fa-solid fa-layer-group"></i> Tiên phong ứng dụng mô hình BIM
+      </div>
+      <h2 class="text-xs sm:text-sm tracking-widest text-slate-200 font-medium uppercase mb-1">
+        CÔNG TY TNHH MTV HOÀNG PHÚC
+      </h2>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase mb-3 drop-shadow-md">
+        Chiến Dịch Tuyển Dụng <span class="text-accent-gold">2026</span>
+      </h1>
+      <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
+        “Mở rộng quy mô & kiến tạo những công trình biểu tượng. Gia nhập ngay đội ngũ kỹ sư & kiến trúc sư nhiệt huyết!”
+      </p>
+
+      <!-- Key Benefits Quick Badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mt-6 pt-6 border-t border-white/10 text-left">
+        <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2.5 border border-white/10 flex items-center gap-2.5">
+          <i class="fa-solid fa-graduation-cap text-accent-gold text-lg"></i>
+          <div>
+            <div class="text-xs font-bold text-white">Đào tạo BIM</div>
+            <div class="text-[11px] text-slate-300">Bài bản khi là NV chính thức</div>
+          </div>
+        </div>
+        <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2.5 border border-white/10 flex items-center gap-2.5">
+          <i class="fa-solid fa-award text-accent-gold text-lg"></i>
+          <div>
+            <div class="text-xs font-bold text-white">Lương Tháng 13</div>
+            <div class="text-[11px] text-slate-300">Xét tăng lương theo năm</div>
+          </div>
+        </div>
+        <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2.5 border border-white/10 flex items-center gap-2.5">
+          <i class="fa-solid fa-shield-heart text-accent-gold text-lg"></i>
+          <div>
+            <div class="text-xs font-bold text-white">BHXH & Y Tế</div>
+            <div class="text-[11px] text-slate-300">Khám sức khỏe định kỳ</div>
+          </div>
+        </div>
+        <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2.5 border border-white/10 flex items-center gap-2.5">
+          <i class="fa-solid fa-laptop-code text-accent-gold text-lg"></i>
+          <div>
+            <div class="text-xs font-bold text-white">Thiết Bị Hiện Đại</div>
+            <div class="text-[11px] text-slate-300">Máy trạm cấu hình cao</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APPLICATION FORM CONTAINER -->
+  <main class="max-w-4xl w-full mx-auto px-4 sm:px-6 -mt-6 mb-16 relative z-20 flex-1">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-200/80 overflow-hidden">
+
+      <!-- PROGRESS TRACKER -->
+      <div class="bg-slate-900 px-4 sm:px-8 py-4 text-white">
+        <div class="flex items-center justify-between max-w-xl mx-auto">
+          <!-- Step 1 Indicator -->
+          <div class="flex items-center gap-2 cursor-pointer" onclick="goToStep(1)">
+            <div id="step-badge-1"
+              class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold step-active transition-all">
+              1
+            </div>
+            <span class="text-xs sm:text-sm font-medium hidden sm:inline">Vị trí</span>
+          </div>
+          <div class="flex-1 h-0.5 bg-slate-700 mx-2">
+            <div id="bar-1" class="h-full bg-accent-gold transition-all duration-300 w-0"></div>
+          </div>
+
+          <!-- Step 2 Indicator -->
+          <div class="flex items-center gap-2 cursor-pointer" onclick="goToStep(2)">
+            <div id="step-badge-2"
+              class="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center text-xs font-bold transition-all">
+              2
+            </div>
+            <span class="text-xs sm:text-sm font-medium hidden sm:inline text-slate-400">Thông tin</span>
+          </div>
+          <div class="flex-1 h-0.5 bg-slate-700 mx-2">
+            <div id="bar-2" class="h-full bg-accent-gold transition-all duration-300 w-0"></div>
+          </div>
+
+          <!-- Step 3 Indicator -->
+          <div class="flex items-center gap-2 cursor-pointer" onclick="goToStep(3)">
+            <div id="step-badge-3"
+              class="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center text-xs font-bold transition-all">
+              3
+            </div>
+            <span class="text-xs sm:text-sm font-medium hidden sm:inline text-slate-400">Chuyên môn</span>
+          </div>
+          <div class="flex-1 h-0.5 bg-slate-700 mx-2">
+            <div id="bar-3" class="h-full bg-accent-gold transition-all duration-300 w-0"></div>
+          </div>
+
+          <!-- Step 4 Indicator -->
+          <div class="flex items-center gap-2 cursor-pointer" onclick="goToStep(4)">
+            <div id="step-badge-4"
+              class="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center text-xs font-bold transition-all">
+              4
+            </div>
+            <span class="text-xs sm:text-sm font-medium hidden sm:inline text-slate-400">Hồ sơ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM CONTENT WRAPPER -->
+      <form id="recruitmentForm" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-8">
+
+        <!-- ==================== STEP 1: CHỌN VỊ TRÍ ==================== -->
+        <div id="step-1" class="space-y-6">
+          <div class="border-b pb-4">
+            <div class="text-xs uppercase tracking-wider font-bold text-brand-700">Bước 1 / 4</div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Chọn vị trí bạn muốn ứng tuyển</h3>
+            <p class="text-slate-500 text-sm mt-1">Vui lòng nhấp chọn 1 vị trí phù hợp nhất với năng lực và định hướng
+              của bạn.</p>
+          </div>
+
+          <!-- Job Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Job 1 -->
+            <label
+              class="job-card relative border-2 border-slate-200 hover:border-brand-700 rounded-xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between group hover:shadow-md bg-white">
+              <input type="radio" name="job_position" value="kien_truc_su_quy_hoach" class="sr-only"
+                onchange="onJobSelect(this)">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <span
+                    class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full border border-red-300">
+                    <i class="fa-solid fa-bolt mr-1"></i> Đi làm ngay
+                  </span>
+                  <span class="text-xs font-semibold text-slate-400">Mã: 01/05</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Kiến Trúc Sư Quy
+                  Hoạch</h4>
+                <p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                  Lập hồ sơ quy hoạch, tiếp cận pháp lý dự án, phối hợp đa bộ môn & kiểm tra hoàn thiện hồ sơ.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span><i class="fa-regular fa-clock text-amber-600 mr-1"></i> 2 - 5 năm exp</span>
+                <span class="font-medium text-brand-700"><i class="fa-solid fa-cube mr-1"></i> Ưu tiên Revit/BIM</span>
+              </div>
+              <div class="selected-check absolute top-3 right-3 hidden text-brand-700 text-lg">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+
+            <!-- Job 2 -->
+            <label
+              class="job-card relative border-2 border-slate-200 hover:border-brand-700 rounded-xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between group hover:shadow-md bg-white">
+              <input type="radio" name="job_position" value="kien_truc_su" class="sr-only" onchange="onJobSelect(this)">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <span
+                    class="bg-brand-50 text-brand-800 text-xs font-bold px-2 py-0.5 rounded-full border border-brand-200">
+                    Số lượng: 04 người
+                  </span>
+                  <span class="text-xs font-semibold text-slate-400">Mã: 02/05</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Kiến Trúc Sư (Thiết
+                  kế)</h4>
+                <p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                  Thiết kế kiến trúc công trình dân dụng, phối hợp Kết cấu, MEP, PCCC để tối ưu hóa thiết kế.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span><i class="fa-regular fa-clock text-amber-600 mr-1"></i> 2 - 5 năm exp</span>
+                <span class="font-bold text-amber-700"><i class="fa-solid fa-star mr-1"></i> Giỏi Revit</span>
+              </div>
+              <div class="selected-check absolute top-3 right-3 hidden text-brand-700 text-lg">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+
+            <!-- Job 3 -->
+            <label
+              class="job-card relative border-2 border-slate-200 hover:border-brand-700 rounded-xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between group hover:shadow-md bg-white">
+              <input type="radio" name="job_position" value="ky_su_ha_tang" class="sr-only"
+                onchange="onJobSelect(this)">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <span
+                    class="bg-brand-50 text-brand-800 text-xs font-bold px-2 py-0.5 rounded-full border border-brand-200">
+                    Số lượng: 01 người
+                  </span>
+                  <span class="text-xs font-semibold text-slate-400">Mã: 03/05</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Kỹ Sư Hạ Tầng Kỹ
+                  Thuật Giao Thông</h4>
+                <p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                  Thiết kế chuyên sâu hạ tầng giao thông, quy hoạch đô thị, khu dân cư, đường giao thông đồng bộ.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span><i class="fa-regular fa-clock text-amber-600 mr-1"></i> 2 - 5 năm exp</span>
+                <span class="font-medium text-brand-700"><i class="fa-solid fa-cube mr-1"></i> Ưu tiên BIM</span>
+              </div>
+              <div class="selected-check absolute top-3 right-3 hidden text-brand-700 text-lg">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+
+            <!-- Job 4 -->
+            <label
+              class="job-card relative border-2 border-slate-200 hover:border-brand-700 rounded-xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between group hover:shadow-md bg-white">
+              <input type="radio" name="job_position" value="ky_su_xay_dung" class="sr-only"
+                onchange="onJobSelect(this)">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <span
+                    class="bg-brand-50 text-brand-800 text-xs font-bold px-2 py-0.5 rounded-full border border-brand-200">
+                    Số lượng: 03 người
+                  </span>
+                  <span class="text-xs font-semibold text-slate-400">Mã: 04/05</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Kỹ Sư Xây Dựng (Kết
+                  Cấu)</h4>
+                <p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                  Thiết kế kết cấu chuyên sâu cho công trình dân dụng & công nghiệp; bắt buộc chứng chỉ hành nghề.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span><i class="fa-regular fa-clock text-amber-600 mr-1"></i> 2 - 5 năm exp</span>
+                <span class="font-bold text-rose-700"><i class="fa-solid fa-certificate mr-1"></i> Cần CCHN Hạng
+                  III</span>
+              </div>
+              <div class="selected-check absolute top-3 right-3 hidden text-brand-700 text-lg">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+
+            <!-- Job 5 -->
+            <label
+              class="job-card relative border-2 border-slate-200 hover:border-brand-700 rounded-xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between group hover:shadow-md bg-white md:col-span-2">
+              <input type="radio" name="job_position" value="ky_su_du_toan" class="sr-only"
+                onchange="onJobSelect(this)">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span
+                      class="bg-brand-50 text-brand-800 text-xs font-bold px-2 py-0.5 rounded-full border border-brand-200">
+                      Số lượng: 03 người
+                    </span>
+                    <span class="text-xs font-semibold text-slate-400">Mã: 05/05</span>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition">Kỹ Sư Dự Toán
+                    (Bóc Khối Lượng)</h4>
+                  <p class="text-xs text-slate-600 mt-1">
+                    Bóc tách khối lượng chi tiết, lập dự toán và quyết toán công trình.
+                  </p>
+                </div>
+                <div class="text-xs bg-amber-50 text-amber-800 p-2 rounded-lg border border-amber-200 shrink-0">
+                  <i class="fa-solid fa-landmark text-amber-700 mr-1"></i> <strong>Ưu tiên:</strong> Kinh nghiệm dự án
+                  trường học, trụ sở vốn đầu tư công
+                </div>
+              </div>
+              <div class="selected-check absolute top-3 right-3 hidden text-brand-700 text-lg">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+          </div>
+
+          <div id="job-error" class="hidden text-red-600 text-sm font-medium flex items-center gap-1.5">
+            <i class="fa-solid fa-triangle-exclamation"></i> Vui lòng chọn 1 vị trí ứng tuyển để tiếp tục.
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="flex justify-end pt-4 border-t">
+            <button type="button" onclick="validateStep1()"
+              class="px-6 py-3 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-xl shadow-lg shadow-brand-900/20 flex items-center gap-2 transition-all">
+              Tiếp tục: Thông tin cá nhân <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== STEP 2: THÔNG TIN CÁ NHÂN ==================== -->
+        <div id="step-2" class="space-y-6 hidden">
+          <div class="border-b pb-4">
+            <div class="text-xs uppercase tracking-wider font-bold text-brand-700">Bước 2 / 4</div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Thông tin cá nhân & Liên hệ</h3>
+            <p class="text-slate-500 text-sm mt-1">Bộ phận Tuyển dụng Hoàng Phúc sẽ kết nối trực tiếp với bạn qua thông
+              tin này.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- Full Name -->
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-bold text-slate-700 mb-1">Họ và tên của bạn <span
+                  class="text-red-500">*</span></label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                <input type="text" id="full_name" required placeholder="Nguyễn Văn A"
+                  class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Số điện thoại (có Zalo) <span
+                  class="text-red-500">*</span></label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <input type="tel" id="phone" required placeholder="0912 345 678"
+                  class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Địa chỉ Email <span
+                  class="text-red-500">*</span></label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <i class="fa-regular fa-envelope"></i>
+                </span>
+                <input type="email" id="email" required placeholder="email@example.com"
+                  class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+              </div>
+            </div>
+
+            <!-- Year of Birth -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Năm sinh</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <i class="fa-regular fa-calendar"></i>
+                </span>
+                <input type="number" id="birth_year" placeholder="1998" min="1960" max="2008"
+                  class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+              </div>
+            </div>
+
+            <!-- Current Location -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Nơi ở hiện tại (Quận / Huyện, Tỉnh /
+                TP)</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <input type="text" id="location" placeholder="Quận 10, TP. Hồ Chí Minh"
+                  class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+              </div>
+            </div>
+
+            <!-- Degree & Major -->
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-bold text-slate-700 mb-1">Trường tốt nghiệp & Chuyên ngành đào tạo <span
+                  class="text-red-500">*</span></label>
+              <input type="text" id="education" required
+                placeholder="VD: ĐH Kiến Trúc TP.HCM - Khoa Kiến trúc Quy hoạch"
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+            </div>
+          </div>
+
+          <div id="step2-error" class="hidden text-red-600 text-sm font-medium flex items-center gap-1.5">
+            <i class="fa-solid fa-triangle-exclamation"></i> Vui lòng điền đầy đủ các thông tin bắt buộc (*).
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="flex items-center justify-between pt-4 border-t">
+            <button type="button" onclick="goToStep(1)"
+              class="px-5 py-2.5 border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium rounded-xl text-sm transition">
+              <i class="fa-solid fa-arrow-left mr-1"></i> Quay lại
+            </button>
+            <button type="button" onclick="validateStep2()"
+              class="px-6 py-3 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-xl shadow-lg shadow-brand-900/20 flex items-center gap-2 transition-all">
+              Tiếp tục: Chuyên môn & Kỹ năng <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== STEP 3: NĂNG LỰC CHUYÊN MÔN ==================== -->
+        <div id="step-3" class="space-y-6 hidden">
+          <div class="border-b pb-4">
+            <div class="text-xs uppercase tracking-wider font-bold text-brand-700">Bước 3 / 4</div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Kinh nghiệm & Kỹ năng thực chiến</h3>
+            <p class="text-slate-500 text-sm mt-1">Hoàng Phúc đặc biệt ưu tiên các ứng viên có nền tảng ứng dụng mô hình
+              Revit / BIM.</p>
+          </div>
+
+          <!-- Experience Years -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">Số năm kinh nghiệm trong ngành <span
+                class="text-red-500">*</span></label>
+            <div class="grid grid-cols-3 gap-3">
+              <label
+                class="border rounded-xl p-3 text-center cursor-pointer hover:border-brand-700 transition flex flex-col items-center">
+                <input type="radio" name="experience" value="under_2" class="sr-only exp-radio" required>
+                <span class="text-sm font-semibold text-slate-800">Dưới 2 năm</span>
+                <span class="text-[11px] text-slate-400 mt-0.5">Mới ra trường / Tiềm năng</span>
+              </label>
+              <label
+                class="border-2 border-brand-700 bg-brand-50/50 rounded-xl p-3 text-center cursor-pointer transition flex flex-col items-center">
+                <input type="radio" name="experience" value="2_to_5" checked class="sr-only exp-radio">
+                <span class="text-sm font-bold text-brand-800">2 - 5 năm</span>
+                <span class="text-[11px] text-brand-600 mt-0.5 font-medium">Đúng tiêu chuẩn tuyển dụng</span>
+              </label>
+              <label
+                class="border rounded-xl p-3 text-center cursor-pointer hover:border-brand-700 transition flex flex-col items-center">
+                <input type="radio" name="experience" value="over_5" class="sr-only exp-radio">
+                <span class="text-sm font-semibold text-slate-800">Trên 5 năm</span>
+                <span class="text-[11px] text-slate-400 mt-0.5">Kinh nghiệm dày dặn</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Software Skills -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">Phần mềm & công cụ bạn thành thạo <span
+                class="text-red-500">*</span></label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-amber-300 bg-amber-50/60 cursor-pointer hover:bg-amber-100/60 transition">
+                <input type="checkbox" name="software" value="Revit/BIM" checked
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-bold text-amber-900">
+                  <i class="fa-solid fa-cube text-amber-600 mr-1"></i> Revit / BIM (Ưu tiên)
+                </span>
+              </label>
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                <input type="checkbox" name="software" value="AutoCAD"
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-medium text-slate-700">AutoCAD</span>
+              </label>
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                <input type="checkbox" name="software" value="SketchUp"
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-medium text-slate-700">SketchUp</span>
+              </label>
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                <input type="checkbox" name="software" value="KetCau"
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-medium text-slate-700">ETABS / SAP2000 / SAFE</span>
+              </label>
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                <input type="checkbox" name="software" value="DuToan"
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-medium text-slate-700">Dự toán G8 / Eta / F1</span>
+              </label>
+              <label
+                class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                <input type="checkbox" name="software" value="DoHoaKhac"
+                  class="w-4 h-4 text-brand-700 rounded focus:ring-brand-700">
+                <span class="text-xs sm:text-sm font-medium text-slate-700">Lumion / Photoshop / Khác</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dynamic Conditional Question: Civil Engineer (Chứng chỉ hạng III) -->
+          <div id="field-certificate" class="hidden p-4 rounded-xl bg-rose-50 border border-rose-200">
+            <label class="block text-sm font-bold text-rose-900 mb-1">
+              <i class="fa-solid fa-stamp text-rose-700 mr-1.5"></i> Yêu cầu bắt buộc đối với Kỹ Sư Xây Dựng:
+            </label>
+            <p class="text-xs text-rose-700 mb-3">Bạn đã được cấp Chứng chỉ hành nghề thiết kế kết cấu Hạng III trở lên
+              chưa?</p>
+            <div class="flex gap-4">
+              <label class="flex items-center gap-2 cursor-pointer text-sm font-semibold text-rose-950">
+                <input type="radio" name="certificate_tier3" value="yes" class="text-rose-700">
+                <span>Đã có chứng chỉ Hạng III trở lên</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer text-sm font-normal text-slate-700">
+                <input type="radio" name="certificate_tier3" value="no" class="text-rose-700">
+                <span>Chưa có / Đang chuẩn bị thi</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dynamic Conditional Question: Cost Estimator (Vốn đầu tư công) -->
+          <div id="field-public-investment" class="hidden p-4 rounded-xl bg-amber-50 border border-amber-200">
+            <label class="block text-sm font-bold text-amber-900 mb-1">
+              <i class="fa-solid fa-landmark text-amber-700 mr-1.5"></i> Tiêu chí ưu tiên đặc biệt với Kỹ Sư Dự Toán:
+            </label>
+            <p class="text-xs text-amber-800 mb-3">Bạn đã có kinh nghiệm lập dự toán, bóc tách hồ sơ công trình trường
+              học hoặc trụ sở vốn đầu tư công chưa?</p>
+            <div class="flex gap-4">
+              <label class="flex items-center gap-2 cursor-pointer text-sm font-semibold text-amber-950">
+                <input type="radio" name="public_fund_exp" value="yes" class="text-amber-700">
+                <span>Đã từng thực hiện nhiều dự án</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer text-sm font-normal text-slate-700">
+                <input type="radio" name="public_fund_exp" value="no" class="text-amber-700">
+                <span>Chưa từng làm dự án vốn đầu tư công</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Project Highlight -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1">Tóm tắt các dự án nổi bật bạn từng tham
+              gia</label>
+            <textarea id="projects" rows="3"
+              placeholder="Ví dụ: Tham gia thiết kế quy hoạch 1/500 Khu đô thị Nam An (Bình Dương), chủ trì phần mô hình Revit kết cấu tòa nhà văn phòng 15 tầng..."
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm"></textarea>
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="flex items-center justify-between pt-4 border-t">
+            <button type="button" onclick="goToStep(2)"
+              class="px-5 py-2.5 border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium rounded-xl text-sm transition">
+              <i class="fa-solid fa-arrow-left mr-1"></i> Quay lại
+            </button>
+            <button type="button" onclick="goToStep(4)"
+              class="px-6 py-3 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-xl shadow-lg shadow-brand-900/20 flex items-center gap-2 transition-all">
+              Tiếp tục: Hồ sơ & Portfolio <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== STEP 4: HỒ SƠ ỨNG TUYỂN ==================== -->
+        <div id="step-4" class="space-y-6 hidden">
+          <div class="border-b pb-4">
+            <div class="text-xs uppercase tracking-wider font-bold text-brand-700">Bước 4 / 4</div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Đính kèm hồ sơ & Hoàn tất</h3>
+            <p class="text-slate-500 text-sm mt-1">Gửi liên kết CV và Portfolio để Hoàng Phúc đánh giá tốt nhất năng lực
+              thực tế của bạn.</p>
+          </div>
+
+          <!-- Portfolio / CV Link -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1">Đường dẫn CV / Portfolio năng lực (Google Drive,
+              Behance, OneDrive...) <span class="text-red-500">*</span></label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                <i class="fa-solid fa-link"></i>
+              </span>
+              <input type="url" id="cv_link" required placeholder="https://drive.google.com/drive/folders/..."
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+            </div>
+            <p class="text-[12px] text-amber-700 mt-1.5 flex items-center gap-1">
+              <i class="fa-solid fa-circle-info"></i> Lưu ý: Vui lòng mở quyền "Bất kỳ ai có đường liên kết đều có thể
+              xem".
+            </p>
+          </div>
+
+          <!-- Start date & Expected Salary -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Thời gian có thể bắt đầu nhận việc <span
+                  class="text-red-500">*</span></label>
+              <select id="start_time" required
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm bg-white">
+                <option value="Đi làm ngay">Đi làm ngay (Ưu tiên)</option>
+                <option value="Sau 1 - 2 tuần">Sau 1 - 2 tuần</option>
+                <option value="Sau 30 ngày bàn giao">Sau 30 ngày (Sau khi bàn giao việc cũ)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1">Mức lương kỳ vọng (VNĐ/tháng)</label>
+              <input type="text" id="salary" placeholder="VD: 15 - 20 triệu / Thỏa thuận"
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none transition text-sm">
+            </div>
+          </div>
+
+          <!-- Workplace Info Card -->
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-start gap-3 text-xs text-slate-600">
+            <i class="fa-solid fa-map-location-dot text-brand-700 text-lg mt-0.5"></i>
+            <div>
+              <div class="font-bold text-slate-800 text-sm">Địa điểm làm việc chính thức:</div>
+              <div>782 Lý Thái Tổ, P. Bình Dương, TP. Hồ Chí Minh</div>
+              <div class="text-slate-500 mt-0.5">Email tiếp nhận: <span
+                  class="text-brand-800 font-semibold">Tdhoangphuc@hoangphuclighting.com</span> | Hotline Zalo: <span
+                  class="font-semibold text-slate-800">0932.165.231</span></div>
+            </div>
+          </div>
+
+          <div id="step4-error" class="hidden text-red-600 text-sm font-medium flex items-center gap-1.5">
+            <i class="fa-solid fa-triangle-exclamation"></i> Vui lòng cung cấp link CV/Portfolio để hoàn tất đơn ứng
+            tuyển.
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="flex items-center justify-between pt-4 border-t">
+            <button type="button" onclick="goToStep(3)"
+              class="px-5 py-2.5 border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium rounded-xl text-sm transition">
+              <i class="fa-solid fa-arrow-left mr-1"></i> Quay lại
+            </button>
+            <button type="submit" id="submitBtn"
+              class="px-8 py-3 bg-gradient-to-r from-brand-800 to-brand-600 hover:from-brand-900 hover:to-brand-700 text-white font-bold rounded-xl shadow-xl shadow-brand-900/30 flex items-center gap-2 transition-all transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-paper-plane"></i> Nộp Đơn Ứng Tuyển
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- SUCCESS MODAL POPUP -->
+  <div id="successModal"
+    class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div
+      class="bg-white rounded-2xl max-w-md w-full p-6 text-center shadow-2xl border border-slate-100 animate-bounce-short">
+      <div
+        class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-slate-900">Gửi Hồ Sơ Thành Công!</h3>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        Cảm ơn bạn đã quan tâm và ứng tuyển vào <strong>Công ty TNHH MTV Hoàng Phúc</strong>. Chúng tôi đã ghi nhận hồ
+        sơ và sẽ phản hồi trong thời gian sớm nhất.
+      </p>
+
+      <div class="bg-amber-50 rounded-xl p-3 border border-amber-200 mt-4 text-xs text-amber-900 text-left">
+        <div class="font-bold flex items-center gap-1.5 mb-1">
+          <i class="fa-solid fa-comments text-amber-700"></i> Để trao đổi nhanh & ưu tiên lịch phỏng vấn:
+        </div>
+        <div>Vui lòng kết nối Zalo Hotline: <strong class="text-brand-800">0932.165.231</strong> hoặc gửi bổ sung bản vẽ
+          chi tiết về email <strong>Tdhoangphuc@hoangphuclighting.com</strong>.</div>
+      </div>
+
+      <button onclick="closeModalAndReset()"
+        class="w-full mt-5 py-2.5 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-xl transition">
+        Xác nhận & Đóng
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs mt-auto border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-slate-300 font-semibold mb-1">CÔNG TY TNHH MTV HOÀNG PHÚC • CHIẾN DỊCH TUYỂN DỤNG 2026</div>
+      <p>Địa chỉ: 782 Lý Thái Tổ, P. Bình Dương, TP. HCM | Hotline: 0932.165.231</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    let currentStep = 1;
+    let selectedJobTitle = '';
+
+    // Handle Job Card selection & style highlight
+    function onJobSelect(radio) {
+      document.querySelectorAll('.job-card').forEach(card => {
+        card.classList.remove('border-brand-700', 'bg-brand-50/40', 'shadow-md');
+        card.querySelector('.selected-check').classList.add('hidden');
+      });
+
+      const parentCard = radio.closest('.job-card');
+      parentCard.classList.add('border-brand-700', 'bg-brand-50/40', 'shadow-md');
+      parentCard.querySelector('.selected-check').classList.remove('hidden');
+
+      document.getElementById('job-error').classList.add('hidden');
+      selectedJobTitle = radio.value;
+
+      // Handle dynamic question triggers
+      const certBox = document.getElementById('field-certificate');
+      const publicFundBox = document.getElementById('field-public-investment');
+
+      if (radio.value === 'ky_su_xay_dung') {
+        certBox.classList.remove('hidden');
+      } else {
+        certBox.classList.add('hidden');
+      }
+
+      if (radio.value === 'ky_su_du_toan') {
+        publicFundBox.classList.remove('hidden');
+      } else {
+        publicFundBox.classList.add('hidden');
+      }
+    }
+
+    function updateStepIndicator(step) {
+      for (let i = 1; i <= 4; i++) {
+        const badge = document.getElementById(`step-badge-${i}`);
+        if (i < step) {
+          badge.className = "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold step-completed transition-all";
+          badge.innerHTML = '<i class="fa-solid fa-check"></i>';
+        } else if (i === step) {
+          badge.className = "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold step-active transition-all";
+          badge.innerHTML = i;
+        } else {
+          badge.className = "w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center text-xs font-bold transition-all";
+          badge.innerHTML = i;
+        }
+      }
+
+      // Update progress lines
+      document.getElementById('bar-1').style.width = step > 1 ? '100%' : '0%';
+      document.getElementById('bar-2').style.width = step > 2 ? '100%' : '0%';
+      document.getElementById('bar-3').style.width = step > 3 ? '100%' : '0%';
+    }
+
+    function goToStep(step) {
+      if (step > currentStep) {
+        if (currentStep === 1 && !validateStep1(false)) return;
+        if (currentStep === 2 && !validateStep2(false)) return;
+      }
+
+      // Hide all steps
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`step-${i}`).classList.add('hidden');
+      }
+
+      // Show target step
+      document.getElementById(`step-${step}`).classList.remove('hidden');
+      currentStep = step;
+      updateStepIndicator(step);
+      window.scrollTo({ top: 200, behavior: 'smooth' });
+    }
+
+    function validateStep1(proceed = true) {
+      const selected = document.querySelector('input[name="job_position"]:checked');
+      if (!selected) {
+        document.getElementById('job-error').classList.remove('hidden');
+        return false;
+      }
+      document.getElementById('job-error').classList.add('hidden');
+      if (proceed) goToStep(2);
+      return true;
+    }
+
+    function validateStep2(proceed = true) {
+      const name = document.getElementById('full_name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const edu = document.getElementById('education').value.trim();
+
+      if (!name || !phone || !email || !edu) {
+        document.getElementById('step2-error').classList.remove('hidden');
+        return false;
+      }
+      document.getElementById('step2-error').classList.add('hidden');
+      if (proceed) goToStep(3);
+      return true;
+    }
+
+    // Link Web App Google Sheets của bạn
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxRiB8xhA2COSFMZgv9WrokqS3tKtZvWWejtErHeZznhEGTP6AOh_i7-XJOSHz90_fh/exec";
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const cvLink = document.getElementById('cv_link').value.trim();
+      if (!cvLink) {
+        document.getElementById('step4-error').classList.remove('hidden');
+        return;
+      }
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Đang gửi hồ sơ...';
+
+      // Map tên vị trí cho đẹp mắt
+      const jobNames = {
+        'kien_truc_su_quy_hoach': 'Kiến Trúc Sư Quy Hoạch',
+        'kien_truc_su': 'Kiến Trúc Sư (Thiết kế)',
+        'ky_su_ha_tang': 'Kỹ Sư Hạ Tầng Giao Thông',
+        'ky_su_xay_dung': 'Kỹ Sư Xây Dựng (Kết Cấu)',
+        'ky_su_du_toan': 'Kỹ Sư Dự Toán'
+      };
+
+      const selectedJob = document.querySelector('input[name="job_position"]:checked')?.value || "";
+      const selectedExp = document.querySelector('input[name="experience"]:checked')?.value || "";
+      const skills = Array.from(document.querySelectorAll('input[name="software"]:checked')).map(i => i.value).join(', ');
+
+      const certVal = document.querySelector('input[name="certificate_tier3"]:checked')?.value === 'yes' ? 'Đã có CCHN Hạng III' : 'Chưa có';
+      const govVal = document.querySelector('input[name="public_fund_exp"]:checked')?.value === 'yes' ? 'Đã có kinh nghiệm' : 'Chưa có kinh nghiệm';
+
+      // Đóng gói dữ liệu gửi về Google Sheets
+      const payload = {
+        position: jobNames[selectedJob] || selectedJob,
+        fullname: document.getElementById('full_name').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        location: document.getElementById('location').value.trim(),
+        experience: selectedExp === '2_to_5' ? '2 - 5 năm' : (selectedExp === 'over_5' ? 'Trên 5 năm' : 'Dưới 2 năm'),
+        major: document.getElementById('education').value.trim(),
+        skills: skills,
+        cert: selectedJob === 'ky_su_xay_dung' ? certVal : 'Không áp dụng',
+        gov_project: selectedJob === 'ky_su_du_toan' ? govVal : 'Không áp dụng',
+        cv_link: cvLink,
+        start_time: document.getElementById('start_time').value,
+        expected_salary: document.getElementById('salary').value.trim(),
+        notes: document.getElementById('projects').value.trim()
+      };
+
+      try {
+        await fetch(WEB_APP_URL, {
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          mode: "no-cors"
+        });
+
+        // Hiện popup thông báo gửi thành công
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane mr-1"></i> Nộp Đơn Ứng Tuyển';
+        document.getElementById('successModal').classList.remove('hidden');
+
+      } catch (err) {
+        alert("Có lỗi kết nối tạm thời. Vui lòng liên hệ Hotline Zalo: 0932.165.231!");
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane mr-1"></i> Thử gửi lại';
+      }
+    }
+
+    function closeModalAndReset() {
+      document.getElementById('successModal').classList.add('hidden');
+      document.getElementById('recruitmentForm').reset();
+      document.querySelectorAll('.job-card').forEach(card => {
+        card.classList.remove('border-brand-700', 'bg-brand-50/40', 'shadow-md');
+        card.querySelector('.selected-check').classList.add('hidden');
+      });
+      goToStep(1);
+    }
+  </script>
+</body>
+
+</html>
